@@ -60,6 +60,10 @@ class ViewController: UIViewController {
         processOperation(operation: currentOperation)
     }
     
+    @IBAction func clearPressedBtn(_ sender: Any) {
+        playSound()
+        outputLbl.text = "0"
+    }
     func playSound() {
         if btnSound.isPlaying {
             btnSound.stop()
